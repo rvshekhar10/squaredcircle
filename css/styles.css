@@ -12091,7 +12091,7 @@ p.td {
 .box-2 {
   border-bottom: 2px solid black;
   border-left: 2px solid black;
-  animation: rotate 4s;
+  animation: rotate 5s;
   animation-direction: alternate;
   animation-iteration-count: infinite;
   padding-top: 20px;
@@ -12102,7 +12102,10 @@ p.td {
 
 }
 .box-4 {
-  border: 2px solid black;
+  border: 2px solid black;  
+  animation: rotate2 10s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
 }
 
 .circle {
@@ -12113,7 +12116,7 @@ p.td {
 }
 
 .circle.ball {
-  animation: bounce 1s;
+  animation: bounce 2s;
   animation-direction: alternate;
   animation-iteration-count: infinite;
   height: 90px;
@@ -12149,4 +12152,9 @@ p.td {
 @keyframes bounce2 {
   from { transform: translateY( 20px);     }
   to   { transform: translateY( 0); }
+}
+
+@keyframes rotate2 {
+  from { transform: rotate( 0deg);     }
+  to   { transform: rotate( 259deg); }
 }
