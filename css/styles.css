@@ -11601,7 +11601,8 @@ a.nav-link.py-3.px-0.px-lg-3.rounded.text-black span{
   text-transform: capitalize;
 }
 nav#mainNav {
-  background: #f7eee3;
+  background: #f7eee3;  
+  z-index: 999 !important;
 }
 
 .f-fixed-btm {
@@ -11609,6 +11610,7 @@ nav#mainNav {
   width: 98%;
   bottom: 4vh;
   height: 100px;
+  z-index: 999;
 }
 
 .r1 p {
@@ -11640,12 +11642,13 @@ span.mode {
 .f-fixed-med {
   width: 80%;
   position: absolute;
-  top: 65%;
+  top: 65%;    z-index: 999;
 }
 
 .text-left p.masthead-subheading.font-weight-light.mb-0 {
   text-align: left;
   font-size: 1rem;
+  z-index: 999;
 }
 
 .text-left h2.masthead-subheading.font-weight-light.mb-0 {
@@ -11653,11 +11656,11 @@ span.mode {
   font-size: 1.5rem;
   padding-left: 50%;
   font-weight: unset;
+  z-index: 999;
 }
 
 h1.masthead-heading.text-uppercase.mb-0 {
-  background: #f7eee3;
-  z-index: 9;
+  z-index: 999;
   height: 108px;
   font-size: 108px !important;
   padding-top: 50px;
@@ -11674,6 +11677,7 @@ hr.horz {
   color: #1a25303b;
 }
 hr.verc {
+  z-index: 999;
   width: 53%;
   transform: rotate( 
 90deg
@@ -12045,18 +12049,49 @@ round {
 .main-sqaure {
   height: 430px;
   width: 430px;
-  border: 1.5px solid black;
   margin-top: -7.5%;
+  animation: snake 8s linear 1 forwards;
+  z-index: 9;
+}
+.main-sqaure {
+  transform: rotate(
+90deg
+);
+}
+.main-sqaure div.m{
+  transform: rotate(-90deg);
+  width: 100%;
+    height: 100%;
 }
 
+@keyframes snake {
+  
+  0% {
+    box-shadow: 0px -431.5px 0 1.5px #f7eee3, -431.5px 0px 0 1.5px #f7eee3, 0px 431.5px 0 1.5px #f7eee3, 431.5px 0px 0 1.5px #f7eee3, 0px 0px 0 1.5px black;
+  }
+  25% {
+    box-shadow: -433px -431.5px 0 1.5px #f7eee3, -431.5px 0px 0 1.5px #f7eee3, 0px 431.5px 0 1.5px #f7eee3, 431.5px 0px 0 1.5px #f7eee3, 0px 0px 0 1.5px black;
+  }
+  50% {
+    box-shadow: -433px -431.5px 0 1.5px #f7eee3, -431.5px 433px 0 1.5px #f7eee3, 0px 431.5px 0 1.5px #f7eee3, 431.5px 0px 0 1.5px #f7eee3, 0px 0px 0 1.5px black;
+  }
+  75% {
+    box-shadow: -433px -431.5px 0 1.5px #f7eee3, -431.5px 433px 0 1.5px #f7eee3, 433px 431.5px 0 1.5px #f7eee3, 431.5px 0px 0 1.5px #f7eee3, 0px 0px 0 1.5px black;
+  }
+  100% {
+    box-shadow: -433px -431.5px 0 1.5px #f7eee3, -431.5px 433px 0 1.5px #f7eee3, 433px 431.5px 0 1.5px #f7eee3, 431.5px -433px 0 1.5px #f7eee3, 0px 0px 0 1.5px black;
+  }
+  
+}
 .circle-main {
   border: 1.5px solid black;
-  height: 428px;
-  width: 428px;
+  height: 430px;
+  width: 430px;
   margin-left: -13px;
   margin-top: -1px;
   border-radius: 0 50% 50% 0;
   background: url(../assets/img/abc.jpg);
+  z-index: 9999;
 }
 .circle-main-2 {
   height: 428px;
@@ -12065,6 +12100,7 @@ round {
   margin-top: -429px;
   border-radius: 50%;
   background: #f7eee340;
+  z-index: 9999;
 }
 p.dd {
   font-weight: bold;
@@ -12073,30 +12109,54 @@ p.dd {
 }
 
 p.ta {
+  opacity: 0;
   width: fit-content;
   margin-left: 92%;
+  animation: show-me 1s forwards ;
 }
 p.tb {
+  opacity: 0;
   width: fit-content;
   margin-left: 100%;
   transform: rotate(
 270deg
 );
   margin-top: -113%;
+  animation: show-me 1s forwards ;
+  animation-delay: 2s;
 }
 p.tc {
+  opacity: 0;
   width: fit-content;
   margin-left: -3%;
   margin-top: -22%;
+  animation: show-me 1s forwards ;
+  animation-delay: 4s;
 }
 p.td {
+  opacity: 0;
   width: fit-content;
   margin-left: -14%;
   transform: rotate( 
 270deg
 );
   margin-top: 96%;
+  animation: show-me 1s forwards ;
+  animation-delay: 6s;
 }
+
+@keyframes show-me {
+  /* You could think of as "step 1" */
+  0% {
+    opacity: 0;
+  }
+  /* You could think of as "step 2" */
+  100% {
+    opacity: 1;
+  }
+}
+
+
 .box {
   height: 150px;
   width: 150px;
@@ -12175,3 +12235,5 @@ p.td {
   from { transform: rotate( 0deg);     }
   to   { transform: rotate( 259deg); }
 }
+
+
