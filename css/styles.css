@@ -12044,6 +12044,31 @@ round {
   border-radius: 50%;
   background: #f7eee340;
 }
+p.ta {
+  width: fit-content;
+  margin-left: 92%;
+}
+p.tb {
+  width: fit-content;
+  margin-left: 100%;
+  transform: rotate(
+270deg
+);
+  margin-top: -113%;
+}
+p.tc {
+  width: fit-content;
+  margin-left: -4%;
+  margin-top: -19%;
+}
+p.td {
+  width: fit-content;
+  margin-left: -13%;
+  transform: rotate(
+270deg
+);
+  margin-top: 97%;
+}
 .box {
   height: 150px;
   width: 150px;
