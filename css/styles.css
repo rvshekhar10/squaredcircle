@@ -12084,6 +12084,7 @@ round {
   
 }
 .circle-main {
+  opacity: 0;
   border: 1.5px solid black;
   height: 430px;
   width: 430px;
@@ -12091,16 +12092,16 @@ round {
   margin-top: -1px;
   border-radius: 0 50% 50% 0;
   background: url(../assets/img/abc.jpg);
-  z-index: 9999;
+  z-index: 999;
+  animation: show-me2 1s forwards ;
+  animation-delay: 8s;
 }
 .circle-main-2 {
-  height: 428px;
-  width: 428px;
-  margin-left: -13px;
-  margin-top: -429px;
   border-radius: 50%;
-  background: #f7eee340;
+  background: #000000;
   z-index: 9999;
+  animation: grow-me 8s forwards ;
+  animation-delay: 1s;
 }
 p.dd {
   font-weight: bold;
@@ -12153,6 +12154,36 @@ p.td {
   /* You could think of as "step 2" */
   100% {
     opacity: 1;
+  }
+}
+
+@keyframes show-me2 {
+  /* You could think of as "step 1" */
+  0% {
+    opacity: 0;
+  }
+  /* You could think of as "step 2" */
+  100% {
+    opacity: .9;
+  }
+}
+
+@keyframes grow-me {
+  /* You could think of as "step 1" */
+  0% {
+    height: 0px;
+    width: 0px;
+    margin-left: 215px;
+    margin-top: -215px;
+
+  }
+  /* You could think of as "step 2" */
+  100% {
+    height: 430px;
+    width: 430px;   
+    margin-left: -13px;
+    margin-top: -430px;
+    z-index: 99999;
   }
 }
 
