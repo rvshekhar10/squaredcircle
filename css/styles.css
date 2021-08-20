@@ -12022,11 +12022,16 @@ round {
   margin-top: 13%;
 }
 
+.row.inline {
+  z-index: 9 !important;
+}
 .main-sqaure {
   height: 430px;
   width: 430px;
-  border: 1.5px solid black;    margin-top: -7.5%;
+  border: 1.5px solid black;
+  margin-top: -7.5%;
 }
+
 .circle-main {
   border: 1.5px solid black;
   height: 428px;
@@ -12044,6 +12049,12 @@ round {
   border-radius: 50%;
   background: #f7eee340;
 }
+p.dd {
+  font-weight: bold;
+  font-size: 1.1rem;    
+  line-height: 1.8rem;
+}
+
 p.ta {
   width: fit-content;
   margin-left: 92%;
@@ -12058,16 +12069,16 @@ p.tb {
 }
 p.tc {
   width: fit-content;
-  margin-left: -4%;
-  margin-top: -19%;
+  margin-left: -3%;
+  margin-top: -22%;
 }
 p.td {
   width: fit-content;
-  margin-left: -13%;
-  transform: rotate(
+  margin-left: -14%;
+  transform: rotate( 
 270deg
 );
-  margin-top: 97%;
+  margin-top: 96%;
 }
 .box {
   height: 150px;
@@ -12080,6 +12091,10 @@ p.td {
 .box-2 {
   border-bottom: 2px solid black;
   border-left: 2px solid black;
+  animation: rotate 4s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  padding-top: 20px;
 }
 .box-3 {
   border: 2px solid black;
@@ -12095,4 +12110,43 @@ p.td {
   border: 2px solid black;
   height: 148px;
   width: 148px;
+}
+
+.circle.ball {
+  animation: bounce 1s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  height: 90px;
+  width: 90px;
+  margin: auto;
+}
+
+@keyframes bounce {
+  from { transform: translateY( 60px);     }
+  to   { transform: translateY( 0); }
+}
+
+.box-2 .circle.bounce {
+  height: 110px;
+  width: 110px;
+  margin: auto;
+}
+@keyframes rotate {
+  from { transform: rotate( 0deg);     }
+  to   { transform: rotate( -45deg); }
+}
+
+.box-3 .circle.bounce {
+  height: 130px;
+  width: 130px;
+  margin: auto;
+  
+  animation: bounce2 1s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+@keyframes bounce2 {
+  from { transform: translateY( 20px);     }
+  to   { transform: translateY( 0); }
 }
