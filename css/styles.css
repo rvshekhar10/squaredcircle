@@ -12,17 +12,17 @@
  */
  @font-face {
   font-family: myFont;
-  src: url("/assets/font/TelegrafRegular400.otf") format("opentype");
+  src: url("../assets/font/TelegrafRegular400.otf") format("opentype");
   font-weight: normal;
 }
 @font-face {
   font-family: myFontB;
-  src: url("/assets/font/TelegrafUltraBold800.otf") format("opentype");
+  src: url("../assets/font/TelegrafUltraBold800.otf") format("opentype");
   font-weight: bold;
 }
 @font-face {
   font-family: myFontL;
-  src: url("/assets/font/TelegrafUltraLight200.otf") format("opentype");
+  src: url("../assets/font/TelegrafUltraLight200.otf") format("opentype");
   font-weight: light;
 }
 
