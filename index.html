@@ -13,10 +13,13 @@
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
     </head>
     <body id="page-top">
+
         <div class="cursor">
             <div class="cursor__ball cursor__ball--big ">
               <svg height="40" width="40">
@@ -30,28 +33,32 @@
               </svg>
             </div>
           </div>
+
+
+
+          
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg text-uppercase text-black" id="mainNav">
             <div class="container">
                 <a class="navbar-brand text-black" href="index.html">
                     <!-- S<span class="med">D</span><span class="bold">C</span> -->
-                    <img class="logo-img" src="assets/logo.png">
+                    <img class="logo-img hoverable" src="assets/logo.png">
                 </a>
                 &emsp;
                 <span class="mode">Light</span> &ensp;<label class="switch">
                     <input type="checkbox">
                     <span class="slider round"></span>
                   </label>&ensp; <span class="mode">Dark</span>
-                <button class="navbar-toggler font-weight-bold text-black rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler font-weight-bold text-black rounded hoverable" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
                     <i class="fas fa-bars"></i>
                 </button>
                 <div class="collapse navbar-collapse text-black" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded text-black" href="about-us.html">Who.<br><span>About Us</span></a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded text-black" href="#about">Why.<br><span>Our Approach</span></a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded text-black" href="#about">What.<br><span>Our Services</span></a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded text-black" href="#portfolio">Work.<br><span>Our Work</span></a></li>
+                        <li class="nav-item mx-0 mx-lg-1 hoverable"><a class="nav-link py-3 px-0 px-lg-3 rounded text-black hoverable" href="about-us.html">Who.<br><span>About Us</span></a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded text-black hoverable" href="#about">Why.<br><span>Our Approach</span></a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded text-black hoverable" href="#about">What.<br><span>Our Services</span></a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded text-black hoverable" href="#portfolio">Work.<br><span>Our Work</span></a></li>
                     </ul>
                 </div>
             </div>
@@ -64,8 +71,10 @@
                 <!-- Masthead Heading-->
                 <hr class="horz">
                 <hr class="verc">
+                <hr class="horz1">
+                <hr class="verc1">
                 <div class="row inline">
-                <h1 class="masthead-heading text-uppercase mb-0">Square</h1>
+                <h1 class="masthead-heading text-uppercase mb-0"><span class="light">Sq</span><span class="normal">u</span>are</h1>
                 <div class="main-sqaure draw">
                     <div class="m">
                     <div class="circle-main"></div>
@@ -92,7 +101,20 @@
                             <p class="masthead-subheading font-weight-light mb-0">An independent creative and<br>design collaborative studio based<br>out of India.</p>
                         </div>
                         <div class="col-4 offset-4 text-left">
-                            <h2 class="masthead-subheading font-weight-light mb-0">UI/UX design<br>Digital production<br>Branding</h2>
+                            <h2 class="masthead-subheading font-weight-light mb-0">UI/UX design<br>Digital production<br>
+                            
+                                <div class="ms-slider">
+                                    <ul class="ms-slider__words">
+                                      <li class="ms-slider__word">Branding</li>
+                                      <li class="ms-slider__word">Storytelling</li>
+                                      <li class="ms-slider__word">Typography</li>
+                                      <!-- This last word needs to duplicate the first one to ensure a smooth infinite animation -->
+                                      <li class="ms-slider__word">Branding</li>
+                                    </ul>
+                                  </div>
+
+
+                            </h2>
                         </div>
                     </div>
                 </div>
@@ -115,18 +137,18 @@
                 
             </div>
 
-            <span class="hscroll-line"></span>
+            <span class="hscroll-line" data-aos="fade-in"></span>
         </header>
 
                 <!-- About Section-->
-                <section class="page-section mybg text-black mb-0" id="about">
+                <section class="page-section mybg text-black mb-0 module" id="about">
                     <div class="container">
                         <!-- About Section Heading-->
-                        <p class="masthead-subheading text-center font-weight-light mb-0">Our process</p><br><br>
-                        <h2 class="page-section-heading text-center text-black">An <span class="bold">UI/UX</span> company that is <span class="bold">transforming and <br>scaling businesses successfully</span> through <br>it's services.</h2>
+                        <p data-aos="fade-in" class="masthead-subheading text-center font-weight-light mb-0">Our process</p><br><br>
+                        <h2 data-aos="fade-in" class="page-section-heading text-center text-black">An <span class="bold">UI/UX</span> company that is <span class="bold">transforming and <br>scaling businesses successfully</span> through <br>it's services.</h2>
                         <br><br>
                         <!-- About Section Content-->
-                        <div class="row mt-150">
+                        <div class="row mt-150" data-aos="fade-in">
                             <div class="col-3 text-center">
                                 <div class="box box-1">
                                     <div class="circle ball"></div>
@@ -168,12 +190,12 @@
                         </div>
 
                     </div>
-                    <span class="hscroll-line2"></span>
+                    <span class="hscroll-line2" data-aos="fade-in"></span>
                 </section>
 
 
         <!-- Portfolio Section-->
-        <section class="page-section mybg portfolio" id="portfolio">
+        <section class="page-section mybg portfolio module" data-aos="fade-in" id="portfolio">
             <div class="container h-scroll">
                 <!-- Portfolio Section Heading-->
                 <p class="masthead-subheading text-center font-weight-light mb-0">Our work</p><br><br>
@@ -196,24 +218,24 @@
         </section>
 
         <!-- Contact Section-->
-        <section class="page-section mybg" id="contact">
+        <section class="page-section mybg module" id="contact" >
             <div class="container">
                 <!-- Contact Section Heading-->
-                <p class="masthead-subheading text-center font-weight-light mb-0">Contact us</p><br><br><br><br><br><br><br><br>
+                <p class="masthead-subheading text-center font-weight-light mb-0" data-aos="fade-in">Contact us</p><br><br><br><br><br><br><br><br>
 
-                <h2 class="page-section-heading text-center text-black">inte<span class="bold">rested?</span></h2>
+                <h2 class="page-section-heading text-center text-black" data-aos="fade-in">inte<span class="bold">rested?</span></h2>
            
                 <!-- Contact Section Form-->
-                <div class="row justify-content-center inters">
+                <div class="row justify-content-center inters" data-aos="fade-in">
                     <div class="col-lg-6 col-xl-6 text-right">
-<img class="super-f" src="assets/super.jpg">
+<img class="super-f" src="assets/img/superman.png">
                     </div>  
                     <div class="col-lg-6 col-xl-6 text-left">
-<img class="super-b" src="assets/bat.jpg">
+<img class="super-b" src="assets/img/batman.png">
                                             </div>
                 </div>
 
-                <div class="f-fixed-footer">
+                <div class="f-fixed-footer" data-aos="fade-in">
                     <div class="row">
                         <div class="col-1 r1 text-left">
                             <p class="masthead-subheading font-weight-light mb-0">Fantastic Four</p>
@@ -237,5 +259,9 @@
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
     </body>
 </html>
