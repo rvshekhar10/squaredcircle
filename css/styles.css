@@ -12986,6 +12986,12 @@ span.normal {
     display: none;
     visibility: hidden;
   }
+
+  span.mode {
+    font-size: 0.6rem;
+    text-transform: capitalize;
+    margin: -7px !important;
+  }
   h2.page-section-heading.text-center.text-black.aos-init.aos-animate {
     font-size: 48px !important;
   }
