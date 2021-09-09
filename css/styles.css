@@ -11683,9 +11683,8 @@ html {
 #mainNav {
   padding-top: 1rem;
   padding-bottom: 1rem;
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans",
-    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-weight: 700;
+  font-family:  'myFont';
+  text-transform: capitalize;
 }
 #mainNav .navbar-brand {
   color: #fff;
@@ -11695,6 +11694,12 @@ html {
 }
 #mainNav .navbar-nav li.nav-item a.nav-link {
   color: #fff;
+}
+#mainNav .navbar-nav li.nav-item a.nav-link {
+  font-size: 24px;
+  font-family: 'myFont';
+  text-transform: capitalize;
+  line-height: 1.5rem;
 }
 #mainNav .navbar-nav li.nav-item a.nav-link:hover {
   color: #1abc9c;
@@ -11713,8 +11718,8 @@ html {
 
 @media (min-width: 992px) {
   #mainNav {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     transition: padding-top 0.3s, padding-bottom 0.3s;
   }
   #mainNav .navbar-brand {
@@ -11934,7 +11939,7 @@ a.nav-link.py-3.px-0.px-lg-3.rounded.text-black {
   text-align: center;
 }
 a.nav-link.py-3.px-0.px-lg-3.rounded.text-black span {
-  font-size: 0.5rem;
+  font-size: 0.7rem;
   text-transform: capitalize;
 }
 nav#mainNav {
@@ -11983,6 +11988,7 @@ span.mode {
   text-align: left;
   font-size: 1rem;
   z-index: 999;
+  font-family: 'myFont';
 }
 
 .text-left h2.masthead-subheading.font-weight-light.mb-0 {
@@ -12004,6 +12010,7 @@ h1.masthead-heading.mb-0 {
   margin-top: 2%;
   text-align: left;
   width: fit-content;
+  font-family: 'myFont';
 }
 
 hr.horz {
@@ -12029,7 +12036,7 @@ hr.horz1 {
 
 hr.verc {
   z-index: 999;
-  width: 25%;
+  width: 30%;
   transform: rotate(90deg);
   margin-left: -5px;
   color: #1a25300d;
@@ -12092,7 +12099,9 @@ hr.verc1 {
   transform: rotate(90deg) !important;
   tranform-origin: 50% 50%;
 }
-
+p{
+  font-family: 'myFont';
+}
 .hscroll-line2::before,
 .hscroll-line2::after {
   position: absolute;
@@ -12469,10 +12478,10 @@ round {
   z-index: 9;
 }
 .main-sqaure {
-  transform: rotate(90deg);
+  transform: rotate(180deg);
 }
 .main-sqaure div.m {
-  transform: rotate(-90deg);
+  transform: rotate(-180deg);
   width: 100%;
   height: 100%;
 }
@@ -12512,6 +12521,7 @@ round {
   animation: show-me2 1s forwards;
   animation-delay: 11s;
   filter: grayscale(1);
+  background-size: cover;
 }
 .circle-main:hover {
   filter: grayscale(0);
@@ -12534,7 +12544,7 @@ p.ta {
   width: fit-content;
   margin-left: 92%;
   animation: show-me 1s forwards;
-  animation-delay: 3s;
+  animation-delay: 5s;
 }
 p.tb {
   opacity: 0;
@@ -12543,7 +12553,7 @@ p.tb {
   transform: rotate(270deg);
   margin-top: -113%;
   animation: show-me 1s forwards;
-  animation-delay: 5s;
+  animation-delay: 7s;
 }
 p.tc {
   opacity: 0;
@@ -12551,7 +12561,7 @@ p.tc {
   margin-left: -3%;
   margin-top: -22%;
   animation: show-me 1s forwards;
-  animation-delay: 7s;
+  animation-delay: 9s;
 }
 p.td {
   opacity: 0;
@@ -12560,7 +12570,7 @@ p.td {
   transform: rotate(270deg);
   margin-top: 96%;
   animation: show-me 1s forwards;
-  animation-delay: 9s;
+  animation-delay: 11s;
 }
 
 body {
@@ -12569,7 +12579,7 @@ body {
 
 nav#mainNav {
   animation: slide-down 1s forwards;
-  animation-delay: 4s;
+  animation-delay: 6s;
   opacity: 0;
 }
 
@@ -12586,7 +12596,7 @@ h1.masthead-heading {
 }
 .f-fixed-btm {
   animation: slide-down 1s forwards;
-  animation-delay: 7s;
+  animation-delay: 9s;
   opacity: 0;
 }
 @keyframes slide-down {
@@ -12618,6 +12628,82 @@ h1.masthead-heading {
   }
 }
 
+@media(min-width:1440px){
+
+  hr.verc {
+    width: 18%;
+  }
+  hr.horz {
+    width: 12%;
+  }
+  hr.horz1 {
+    width: 14%;
+  }
+  hr.verc1 {
+    width: 7%;
+    bottom: 14%;
+  }
+  .main-sqaure {
+    height: 525px;
+    width: 525px;
+    margin-top: -12.5%;
+  }
+
+p.dd{
+  font-family: ''myFont';
+
+}
+  .circle-main {
+    opacity: 0;
+    border: 1.5px solid black;
+    height: 525px;
+    width: 525px;
+    margin-left: -13px;
+    margin-top: -1px;
+  }
+  h1.masthead-heading.mb-0 {
+    z-index: 999;
+    height: 108px;
+    font-size: 150px !important;
+  }
+
+
+  @keyframes snake {
+    0% {
+      box-shadow: 0px -526.5px 0 1.5px #f7eee3, -526.5px 0px 0 1.5px #f7eee3, 0px 526.5px 0 1.5px #f7eee3, 526.5px 0px 0 1.5px #f7eee3, 0px 0px 0 1.5px black;
+    }
+    25% {
+      box-shadow: -528px -526.5px 0 1.5px #f7eee3, -526.5px 0px 0 1.5px #f7eee3, 0px 526.5px 0 1.5px #f7eee3, 526.5px 0px 0 1.5px #f7eee3, 0px 0px 0 1.5px black;
+    }
+    50% {
+      box-shadow: -528px -526.5px 0 1.5px #f7eee3, -526.5px 528px 0 1.5px #f7eee3, 0px 526.5px 0 1.5px #f7eee3, 526.5px 0px 0 1.5px #f7eee3, 0px 0px 0 1.5px black;
+    }
+    75% {
+      box-shadow: -528px -526.5px 0 1.5px #f7eee3, -526.5px 528px 0 1.5px #f7eee3, 528px 526.5px 0 1.5px #f7eee3, 526.5px 0px 0 1.5px #f7eee3, 0px 0px 0 1.5px black;
+    }
+    100% {
+      box-shadow: -528px -526.5px 0 1.5px #f7eee3, -526.5px 528px 0 1.5px #f7eee3, 528px 526.5px 0 1.5px #f7eee3, 526.5px -528px 0 1.5px #f7eee3, 0px 0px 0 1.5px black;
+    }
+  }
+
+  @keyframes grow-me {
+    /* You could think of as "step 1" */
+    0% {
+      height: 0px;
+      width: 0px;
+      margin-left: 273px;
+      margin-top: -273px;
+    }
+    /* You could think of as "step 2" */
+    100% {
+      height: 525px;
+      width: 525px;
+      margin-left: -13px;
+      margin-top: -492px;
+      z-index: 99999;
+    }
+  }
+}
 .box {
   height: 150px;
   width: 150px;
@@ -12735,7 +12821,8 @@ a {
 }
 
 img.logo-img {
-  max-height: 75px;
+  max-height: 56px;
+  margin-top: 10px;
 }
 
 .row.justify-content-center.inters {
@@ -12795,10 +12882,12 @@ img.super-b:hover {
 
 span.light {
   font-family: "myFontL";
+  font-weight: 100;
 }
 
 span.normal {
   font-family: "myFont";
+  font-weight: normal;
 }
 
 .row.justify-content-center.inters .col-lg-6.col-xl-6.text-right {
