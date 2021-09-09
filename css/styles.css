@@ -11978,7 +11978,7 @@ span.mode {
   text-transform: capitalize;
 }
 .f-fixed-med {
-  width: 80%;
+  width: 78%;
   position: absolute;
   top: 65%;
   z-index: 999;
@@ -11994,7 +11994,7 @@ span.mode {
 .text-left h2.masthead-subheading.font-weight-light.mb-0 {
   text-align: left;
   font-size: 1.5rem;
-  padding-left: 50%;
+  padding-left: 43%;
   font-weight: unset;
   z-index: 999;
   font-family: "myFont";
@@ -12627,14 +12627,16 @@ h1.masthead-heading {
     z-index: 99999;
   }
 }
-
+p{
+  font-family: 'myFont' !important;
+}
 @media(min-width:1440px){
 
   hr.verc {
     width: 18%;
   }
   hr.horz {
-    width: 12%;
+    width: 11%;
   }
   hr.horz1 {
     width: 14%;
@@ -12650,7 +12652,7 @@ h1.masthead-heading {
   }
 
 p.dd{
-  font-family: ''myFont';
+  font-family: 'myFont';
 
 }
   .circle-main {
@@ -12667,6 +12669,21 @@ p.dd{
     font-size: 150px !important;
   }
 
+  p.tb {
+    margin-top: -111%;
+  }
+  p.tc {
+    margin-top: -18%;
+  }
+  p.td {
+    margin-left: -11%;
+    margin-top: 97%;
+  }
+  .hscroll-line {
+    bottom: -50px;
+    right: 45.5%;
+    width: 180px;
+  }
 
   @keyframes snake {
     0% {
@@ -12699,7 +12716,7 @@ p.dd{
       height: 525px;
       width: 525px;
       margin-left: -13px;
-      margin-top: -492px;
+      margin-top: -525px;
       z-index: 99999;
     }
   }
