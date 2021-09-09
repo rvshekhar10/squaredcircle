@@ -12717,8 +12717,11 @@ p.tb {
     75% {
       box-shadow: -528px -526.5px 0 1.5px #f7eee3, -526.5px 528px 0 1.5px #f7eee3, 528px 526.5px 0 1.5px #f7eee3, 526.5px 0px 0 1.5px #f7eee3, 0px 0px 0 1.5px black;
     }
-    100% {
+    99% {
       box-shadow: -528px -526.5px 0 1.5px #f7eee3, -526.5px 528px 0 1.5px #f7eee3, 528px 526.5px 0 1.5px #f7eee3, 526.5px -528px 0 1.5px #f7eee3, 0px 0px 0 1.5px #00000075;
+    }
+    100%{
+      box-shadow: -528px -526.5px 0 1.5px #f7eee300, -526.5px 528px 0 1.5px #f7eee300, 528px 526.5px 0 1.5px #f7eee300, 526.5px -528px 0 1.5px #f7eee300, 0px 0px 0 1.5px #00000075;
     }
   }
 
