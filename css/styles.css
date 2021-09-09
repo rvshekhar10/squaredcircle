@@ -12693,7 +12693,9 @@ p.tb {
     right: 45.5%;
     width: 180px;
   }
-
+  .f-fixed-med {
+    top: 68%;
+  }
   @keyframes snake {
     0% {
       box-shadow: 0px -526.5px 0 1.5px #f7eee3, -526.5px 0px 0 1.5px #f7eee3, 0px 526.5px 0 1.5px #f7eee3, 526.5px 0px 0 1.5px #f7eee3, 0px 0px 0 1.5px black;
