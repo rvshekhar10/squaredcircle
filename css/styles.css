@@ -12217,7 +12217,7 @@ img.myicon {
 }
 
 .row.mt-150 {
-  margin-top: 10%;
+  margin-top: 4%;
 }
 
 #portfolio h2.page-section-heading.text-center.text-black {
@@ -12382,6 +12382,7 @@ section#contact {
 }
 
 /* About Us Page Styling */
+
 
 .abt-page hr.verc {
   width: 10%;
@@ -12666,7 +12667,7 @@ p.dd{
     height: 525px;
     width: 525px;
     margin-left: -13px;
-    margin-top: -1px;
+    margin-top: 0px;
   }
   h1.masthead-heading.mb-0 {
     z-index: 999;
@@ -12696,6 +12697,13 @@ p.tb {
   .f-fixed-med {
     top: 68%;
   }
+
+  .hscroll-line2 {
+    bottom: -1075px;
+    right: 46.4%;
+  }
+
+  
   @keyframes snake {
     0% {
       box-shadow: 0px -526.5px 0 1.5px #f7eee3, -526.5px 0px 0 1.5px #f7eee3, 0px 526.5px 0 1.5px #f7eee3, 526.5px 0px 0 1.5px #f7eee3, 0px 0px 0 1.5px black;
@@ -12710,7 +12718,7 @@ p.tb {
       box-shadow: -528px -526.5px 0 1.5px #f7eee3, -526.5px 528px 0 1.5px #f7eee3, 528px 526.5px 0 1.5px #f7eee3, 526.5px 0px 0 1.5px #f7eee3, 0px 0px 0 1.5px black;
     }
     100% {
-      box-shadow: -528px -526.5px 0 1.5px #f7eee3, -526.5px 528px 0 1.5px #f7eee3, 528px 526.5px 0 1.5px #f7eee3, 526.5px -528px 0 1.5px #f7eee3, 0px 0px 0 1.5px black;
+      box-shadow: -528px -526.5px 0 1.5px #f7eee3, -526.5px 528px 0 1.5px #f7eee3, 528px 526.5px 0 1.5px #f7eee3, 526.5px -528px 0 1.5px #f7eee3, 0px 0px 0 1.5px #00000075;
     }
   }
 
