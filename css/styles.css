@@ -12662,7 +12662,7 @@ p.dd{
 }
   .circle-main {
     opacity: 0;
-    border: 1.5px solid black;
+    border: 2px solid black;
     height: 525px;
     width: 525px;
     margin-left: -13px;
